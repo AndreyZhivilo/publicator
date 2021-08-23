@@ -15,7 +15,13 @@ function videoHandler(array) {
   return videoLinks.map((item) => {
     const cleanArray = [...new Set(item)]
     return (
-      rowStart + colStart + cleanArray.join(colEnd + colStart) + colEnd + rowEnd
+      rowStart +
+      colStart +
+      '\n' +
+      cleanArray.join('\n' + colEnd + colStart + '\n') +
+      '\n' +
+      colEnd +
+      rowEnd
     )
   })
 }

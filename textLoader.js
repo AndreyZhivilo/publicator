@@ -12,7 +12,11 @@ async function textLoader() {
     })
     console.log('Docx convertation - ', docParse.messages)
     let html = docParse.value
-    html = html.replace(/<a id="_\w*"><\/a>/g, '')
+    html = html.replace(/<a id="_\w*?"><\/a>/g, '')
+    html = html.replace(
+      /(<h[123]>)<strong>(.*?)<\/strong>(<\/h[123]>)/g,
+      '$1$2$3'
+    )
     return html
   } catch (e) {
     console.log('Some error - ', e)

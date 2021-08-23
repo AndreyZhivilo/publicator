@@ -23,7 +23,7 @@ function stepsFormatter(obj) {
   )
   const inputImgs = obj.imgList.map(
     (item) =>
-      `<img class="aligncenter" href="${item}" alt="" width="365" height="365">`
+      `<img class="aligncenter" src="${item}" alt="" width="365" height="365">`
   )
   const cols = obj.colNum
   const formatedList = []

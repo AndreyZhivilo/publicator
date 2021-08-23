@@ -13,6 +13,8 @@ function Transform(regex, fn) {
     const shortCodes = text.match(regex)
     console.log('Это шорткоды - ', shortCodes)
 
+    if (!shortCodes) return text
+
     const resArray = await fn(shortCodes)
     console.log('Это готовый массив - ', resArray)
 
