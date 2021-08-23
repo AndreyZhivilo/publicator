@@ -1,0 +1,11 @@
+{
+  "inputFolder": ".temp",
+  "outputFolder": "output",
+  "siteUrl": "https://ogurechnik.ru",
+  "colums": {
+    "rowStart": "[colonizator_wrap]",
+    "rowEnd": "[/colonizator_wrap]",
+    "columnStart": "[colonizator_col]",
+    "columnEnd": "[/colonizator_col]"
+  }
+}
